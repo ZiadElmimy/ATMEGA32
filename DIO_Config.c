@@ -25,10 +25,10 @@ DIO_Status config[total_pins] = {
 		   OUTPUT, //PINC5
 		   OUTPUT, //PINC6
 		   OUTPUT, //PINC7
-		   INPULLUP, //PIND0
-		   INPULLUP, //PIND1
-		   INPULLUP, //PIND2/ INT0
-		   INPULLUP, //PIND3/ INT1
+		   OUTPUT, //PIND0
+		   OUTPUT, //PIND1
+		   OUTPUT, //PIND2/ INT0
+		   OUTPUT, //PIND3/ INT1
 		   OUTPUT, //PIND4/ OC1A
 		   OUTPUT, //PIND5/ OC1B
 		   INFREE, //PIND6

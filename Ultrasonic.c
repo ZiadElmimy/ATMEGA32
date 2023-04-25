@@ -29,12 +29,10 @@ u16 Ultrasonic_GetDistance(DIO_Pin trig)
     DIO_WritePin(trig,HIGH);
     _delay_us(10);
     DIO_WritePin(trig,LOW);
-    if(flag == 2)
-    {
+    while(flag != 2);
       Tt = (T2- T1) + c*max;
       distance = Tt/58;
       flag = 0;
-    }
     return distance;
 
 
